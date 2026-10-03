@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaMind – AI Business Assistant for SMEs</title>
+  <meta name="description" content="AquaMind helps small and medium-sized businesses automate routine work, create documents, manage invoices, support customers, and make smarter decisions with AI.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AquaMind – AI Business Assistant for SMEs">
+  <meta property="og:description" content="AquaMind helps small and medium-sized businesses automate routine work, create documents, manage invoices, support customers, and make smarter decisions with AI.">
+  <meta property="og:image" content="./assets/dashboard.png">
+  <meta property="og:site_name" content="AquaMind">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AquaMind – AI Business Assistant for SMEs">
+  <meta name="twitter:description" content="AquaMind helps small and medium-sized businesses automate routine work, create documents, manage invoices, support customers, and make smarter decisions with AI.">
+  <meta name="twitter:image" content="./assets/dashboard.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Pure CSS Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AquaMind",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "All",
+    "description": "Affordable, secure AI Business Assistant designed for small and medium-sized businesses in India.",
+    "offers": {
+      "@type": "Offer",
+      "price": "1500",
+      "priceCurrency": "INR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "1500",
+        "priceCurrency": "INR",
+        "unitText": "MONTH"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Sticky Navigation Bar
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="AquaMind Home">
+        <div class="brand-logo-icon">
+          <svg width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 18C9.5 13.5 14.5 13.5 18 18C21.5 22.5 26.5 22.5 30 18" stroke="#00B8D9" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 24C9.5 19.5 14.5 19.5 18 24C21.5 28.5 26.5 28.5 30 24" stroke="#0B1F3A" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span class="brand-name">AquaMind<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop CTA Buttons -->
+      <div class="nav-actions">
+        <button type="button" class="btn btn-secondary btn-nav-demo btn-book-demo">Book a Demo</button>
+        <button type="button" class="btn btn-primary btn-nav-start btn-start-free">Start Free</button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <ul class="mobile-links">
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#features" class="mobile-link">Features</a></li>
+      <li><a href="#how-it-works" class="mobile-link">How It Works</a></li>
+      <li><a href="#pricing" class="mobile-link">Pricing</a></li>
+      <li><a href="#about" class="mobile-link">About</a></li>
+    </ul>
+    <div class="mobile-actions">
+      <button type="button" class="btn btn-secondary btn-book-demo" style="width: 100%;">Book a Demo</button>
+      <button type="button" class="btn btn-primary btn-start-free" style="width: 100%;">Start Free</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        
+        <!-- Left Column: Copy & Actions -->
+        <div class="hero-content reveal">
+          <div class="badge-tag">
+            <span class="badge-dot"></span>
+            <span>AI BUSINESS ASSISTANT FOR SMES</span>
+          </div>
+
+          <h1 class="hero-title">
+            Run Your Business <span class="highlight">Smarter</span> With AI.
+          </h1>
+
+          <p class="hero-subtitle">
+            AquaMind helps small and medium-sized businesses automate routine work, save time, reduce costs, and make smarter decisions — all from one simple platform.
+          </p>
+
+          <div class="hero-cta-group">
+            <button type="button" class="btn btn-primary btn-start-free">
+              Start Free
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <button type="button" class="btn btn-secondary btn-book-demo">
+              Book a Demo
+            </button>
+          </div>
+
+          <div class="hero-trust-row">
+            <span>Affordable</span>
+            <span class="hero-trust-separator">•</span>
+            <span>Secure</span>
+            <span class="hero-trust-separator">•</span>
+            <span>Easy to Use</span>
+          </div>
+
+          <div class="hero-social-proof">
+            <div class="avatar-stack">
+              <div class="avatar-pill">DJ</div>
+              <div class="avatar-pill">RK</div>
+              <div class="avatar-pill">PS</div>
+              <div class="avatar-pill">AM</div>
+            </div>
+            <p class="proof-text">
+              Trusted by <strong>500+ Indian SMEs</strong> across Bangalore, Hyderabad, Mumbai & Delhi.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column: Realistic AquaMind Dashboard Mockup -->
+        <div class="dashboard-wrapper dashboard-floating reveal delay-1">
+          <div class="dashboard-card" role="region" aria-label="AquaMind Dashboard Interactive Mockup">
+            
+            <!-- Window Topbar -->
+            <div class="dash-topbar">
+              <div class="dash-brand">
+                <svg class="dash-brand-icon" viewBox="0 0 36 36" fill="none">
+                  <path d="M6 18C9.5 13.5 14.5 13.5 18 18C21.5 22.5 26.5 22.5 30 18" stroke="#00B8D9" stroke-width="3.5" stroke-linecap="round"/>
+                  <path d="M6 24C9.5 19.5 14.5 19.5 18 24C21.5 28.5 26.5 28.5 30 24" stroke="#0B1F3A" stroke-width="3.5" stroke-linecap="round"/>
+                </svg>
+                <div>
+                  <span class="dash-brand-title">AquaMind</span>
+                  <span class="dash-brand-sub">Your AI Business Assistant</span>
+                </div>
+              </div>
+
+              <div class="dash-search">
+                <svg class="dash-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Search anything...</span>
+              </div>
+
+              <div class="dash-topbar-right">
+                <div class="dash-quote-wrap">
+                  <div class="dash-date">Thu, 11 Sep 2025</div>
+                  <div class="dash-quote">"Small steps with AI lead to big business growth."</div>
+                </div>
+
+                <div class="dash-user-actions">
+                  <div class="dash-bell-btn" title="Notifications">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    <span class="dash-bell-dot"></span>
+                  </div>
+                  <div class="dash-avatar-circle" title="Dasari Jeavan">DJ</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Body Layout: Sidebar + Workspace -->
+            <div class="dash-body">
+              <!-- Left Mini Sidebar -->
+              <aside class="dash-sidebar">
+                <ul class="dash-nav-menu">
+                  <li class="dash-nav-item active">
+                    <a href="#home">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                      Home
+                    </a>
+                  </li>
+                  <li class="dash-nav-item">
+                    <a href="#features">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                      AI Assistant
+                    </a>
+                  </li>
+                  <li class="dash-nav-item">
+                    <a href="#features">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                      Documents
+                    </a>
+                  </li>
+                  <li class="dash-nav-item">
+                    <a href="#features">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                      Invoices
+                    </a>
+                  </li>
+                  <li class="dash-nav-item">
+                    <a href="#features">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                      Calendar
+                    </a>
+                  </li>
+                  <li class="dash-nav-item">
+                    <a href="#features">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                      Analytics
+                    </a>
+                  </li>
+                  <li class="dash-nav-item">
+                    <a href="#about">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                      Settings
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="dash-sidebar-bottom">
+                  <div class="dash-plan-card">
+                    <div class="dash-plan-header">
+                      <span>Free Plan</span>
+                      <span>↗</span>
+                    </div>
+                    <div class="dash-plan-sub">Upgrade for more features</div>
+                  </div>
+                  <div class="dash-user-row">
+                    <div class="dash-avatar-circle" style="width: 26px; height: 26px; font-size: 0.6875rem;">DJ</div>
+                    <div class="dash-user-info">
+                      <span class="dash-user-name">Dasari Jeavan</span>
+                      <span class="dash-user-role">Business Owner</span>
+                    </div>
+                  </div>
+                </div>
+              </aside>
+
+              <!-- Main Dashboard Canvas -->
+              <div class="dash-main">
+                <div class="dash-welcome">
+                  <span class="dash-welcome-sub">Welcome back,</span>
+                  <h3 class="dash-welcome-name">Dasari!</h3>
+                  <span class="dash-welcome-tagline">Let's make your business smarter today.</span>
+                </div>
+
+                <!-- 4 Action Cards -->
+                <div class="dash-actions-grid">
+                  <div class="dash-action-card card-assistant">
+                    <div class="dash-action-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                    </div>
+                    <div>
+                      <div class="dash-action-title">AI Assistant</div>
+                      <div class="dash-action-desc">Get answers, automate tasks, and more.</div>
+                    </div>
+                    <span class="dash-action-arrow">→</span>
+                  </div>
+
+                  <div class="dash-action-card card-docs">
+                    <div class="dash-action-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                    </div>
+                    <div>
+                      <div class="dash-action-title">Generate Documents</div>
+                      <div class="dash-action-desc">Create reports, letters and contracts.</div>
+                    </div>
+                    <span class="dash-action-arrow">→</span>
+                  </div>
+
+                  <div class="dash-action-card card-invoice">
+                    <div class="dash-action-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                    </div>
+                    <div>
+                      <div class="dash-action-title">Create Invoice</div>
+                      <div class="dash-action-desc">Quick and professional invoices.</div>
+                    </div>
+                    <span class="dash-action-arrow">→</span>
+                  </div>
+
+                  <div class="dash-action-card card-schedule">
+                    <div class="dash-action-icon">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </div>
+                    <div>
+                      <div class="dash-action-title">Schedule</div>
+                      <div class="dash-action-desc">Manage meetings and reminders.</div>
+                    </div>
+                    <span class="dash-action-arrow">→</span>
+                  </div>
+                </div>
+
+                <!-- Middle Grid: Business Overview & Recent Activity -->
+                <div class="dash-middle-grid">
+                  
+                  <!-- Business Overview with Metrics & Revenue Chart -->
+                  <div class="dash-box">
+                    <div class="dash-box-header">
+                      <span class="dash-box-title">Business Overview</span>
+                      <div class="dash-select-badge">This Month ▾</div>
+                    </div>
+
+                    <div class="dash-metrics-row">
+                      <div class="dash-metric-item">
+                        <span class="dash-metric-val" data-counter="124500" data-prefix="₹">₹1,24,500</span>
+                        <span class="dash-metric-lbl">Total Revenue</span>
+                        <span class="dash-metric-trend">↑ 12%</span>
+                      </div>
+                      <div class="dash-metric-item">
+                        <span class="dash-metric-val" data-counter="28">28</span>
+                        <span class="dash-metric-lbl">Invoices Generated</span>
+                        <span class="dash-metric-trend">↑ 27%</span>
+                      </div>
+                      <div class="dash-metric-item">
+                        <span class="dash-metric-val" data-counter="56">56</span>
+                        <span class="dash-metric-lbl">Hours Saved</span>
+                        <span class="dash-metric-trend">↑ 40%</span>
+                      </div>
+                    </div>
+
+                    <div class="dash-chart-subhead">Revenue Growth</div>
+                    <div class="dash-chart-canvas">
+                      <div class="dash-bar-col"><div class="dash-bar"></div><span class="dash-bar-label">Jan</span></div>
+                      <div class="dash-bar-col"><div class="dash-bar"></div><span class="dash-bar-label">Feb</span></div>
+                      <div class="dash-bar-col"><div class="dash-bar"></div><span class="dash-bar-label">Mar</span></div>
+                      <div class="dash-bar-col"><div class="dash-bar"></div><span class="dash-bar-label">Apr</span></div>
+                      <div class="dash-bar-col"><div class="dash-bar"></div><span class="dash-bar-label">May</span></div>
+                      <div class="dash-bar-col"><div class="dash-bar"></div><span class="dash-bar-label">Jun</span></div>
+                    </div>
+                  </div>
+
+                  <!-- Recent Activity List -->
+                  <div class="dash-box">
+                    <div class="dash-box-header">
+                      <span class="dash-box-title">Recent Activity</span>
+                      <a href="#features" style="font-size: 0.6875rem; color: #1E60D5; font-weight: 600;">View All</a>
+                    </div>
+
+                    <div class="dash-activity-list">
+                      <div class="dash-act-item">
+                        <div class="dash-act-icon icon-invoice">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                        </div>
+                        <div class="dash-act-content">
+                          <span class="dash-act-title">Invoice INV-1028 created</span>
+                          <span class="dash-act-time">2 hours ago</span>
+                        </div>
+                      </div>
+
+                      <div class="dash-act-item">
+                        <div class="dash-act-icon icon-doc">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                        </div>
+                        <div class="dash-act-content">
+                          <span class="dash-act-title">Document 'Proposal.pdf' generated</span>
+                          <span class="dash-act-time">5 hours ago</span>
+                        </div>
+                      </div>
+
+                      <div class="dash-act-item">
+                        <div class="dash-act-icon icon-meet">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line></svg>
+                        </div>
+                        <div class="dash-act-content">
+                          <span class="dash-act-title">Meeting with Client (Reddy &amp; Co.)</span>
+                          <span class="dash-act-time">Tomorrow, 10:00 AM</span>
+                        </div>
+                      </div>
+
+                      <div class="dash-act-item">
+                        <div class="dash-act-icon icon-chat">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <div class="dash-act-content">
+                          <span class="dash-act-title">AI Chat: Market research report</span>
+                          <span class="dash-act-time">1 day ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Banner -->
+                <div class="dash-promo-banner">
+                  <div class="dash-promo-left">
+                    <span class="dash-promo-sparkle">✦✦</span>
+                    <div>
+                      <div class="dash-promo-title">Power your Business with AI</div>
+                      <div class="dash-promo-sub">Automate. Save Time. Grow Faster.</div>
+                    </div>
+                  </div>
+                  <button type="button" class="dash-promo-btn btn-start-free">
+                    Explore Features →
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Interactive AI Assistant Pill Prompts -->
+          <div class="hero-ai-prompts" aria-label="Live prompt demonstrations">
+            <div class="ai-prompts-header">
+              <span class="ai-prompts-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00B8D9" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                Ask AquaMind anything:
+              </span>
+              <span class="ai-prompts-hint">Click any prompt to simulate live</span>
+            </div>
+            <div class="prompts-list">
+              <button type="button" class="prompt-chip">"Create an invoice"</button>
+              <button type="button" class="prompt-chip">"Generate a business proposal"</button>
+              <button type="button" class="prompt-chip">"Summarize this document"</button>
+              <button type="button" class="prompt-chip">"Show my monthly performance"</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Floating Live Prompt Toast Output -->
+    <div class="prompt-toast" id="promptToast" role="alert" aria-live="polite">
+      <div class="toast-header">
+        <span class="toast-brand">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#00B8D9" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+          AquaMind AI Assistant
+        </span>
+        <button type="button" class="toast-close" id="toastCloseBtn" aria-label="Close message">×</button>
+      </div>
+      <div class="toast-body" id="toastPromptText">
+        Processing request...
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         Trust / Benefits Section
+         ========================================================================== -->
+    <section class="benefits-section" id="benefits">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Core Advantages</span>
+          <h2 class="section-title">AI That Works for Your Business</h2>
+          <p class="section-desc">
+            Designed specifically for small business owners who want immediate results without technical headaches.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <!-- Card 1 -->
+          <div class="benefit-card reveal delay-1">
+            <div class="benefit-icon-wrapper" aria-hidden="true">⚡</div>
+            <h3 class="benefit-title">Save Time</h3>
+            <p class="benefit-desc">Automate repetitive tasks so you can focus on meeting clients and growing revenue.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="benefit-card reveal delay-2">
+            <div class="benefit-icon-wrapper" aria-hidden="true">💰</div>
+            <h3 class="benefit-title">Reduce Costs</h3>
+            <p class="benefit-desc">Do more with fewer resources without hiring expensive external administrative agencies.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="benefit-card reveal delay-3">
+            <div class="benefit-icon-wrapper" aria-hidden="true">🤖</div>
+            <h3 class="benefit-title">AI Powered</h3>
+            <p class="benefit-desc">Get intelligent assistance for everyday work with natural conversational instructions.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="benefit-card reveal delay-4">
+            <div class="benefit-icon-wrapper" aria-hidden="true">🔒</div>
+            <h3 class="benefit-title">Secure</h3>
+            <p class="benefit-desc">Designed with business privacy in mind, keeping your proprietary records safe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Problem Section
+         ========================================================================== -->
+    <section class="problem-section" id="problem">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">The SME Reality</span>
+          <h2 class="section-title">Small Businesses Shouldn’t Need 10 Tools to Run Their Business.</h2>
+          <p class="section-desc">
+            Managing a business often means switching between multiple applications, repeating manual tasks, and spending valuable time on administrative work.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card reveal delay-1">
+            <span class="problem-number">ISSUE 01</span>
+            <h3 class="problem-title">Too Much Manual Work</h3>
+            <p class="problem-desc">Hours lost re-typing invoices, copying customer data across spreadsheets, and tracking overdue payments manually.</p>
+          </div>
+
+          <div class="problem-card reveal delay-2">
+            <span class="problem-number">ISSUE 02</span>
+            <h3 class="problem-title">Too Many Tools</h3>
+            <p class="problem-desc">Juggling disparate apps for billing, appointments, document drafting, and customer inquiries creates chaos.</p>
+          </div>
+
+          <div class="problem-card reveal delay-3">
+            <span class="problem-number">ISSUE 03</span>
+            <h3 class="problem-title">High Software Costs</h3>
+            <p class="problem-desc">Enterprise software suites charge exorbitant per-seat subscriptions in US Dollars that strain Indian SME budgets.</p>
+          </div>
+
+          <div class="problem-card reveal delay-4">
+            <span class="problem-number">ISSUE 04</span>
+            <h3 class="problem-title">AI Can Feel Complicated</h3>
+            <p class="problem-desc">Most existing AI tools require complex prompt engineering and lack localized Indian business formats.</p>
+          </div>
+        </div>
+
+        <div class="problem-solution-callout reveal">
+          <p class="solution-callout-text">
+            “AquaMind brings everyday business tasks together in one simple AI-powered workspace.”
+          </p>
+          <span class="solution-callout-sub">Zero technical training required. Ready to work right out of the box.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Features Section
+         ========================================================================== -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Powerful Capabilities</span>
+          <h2 class="section-title">Everything You Need. One AI Assistant.</h2>
+          <p class="section-desc">
+            Equip your entire business with tools that eliminate tedious administrative work.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card reveal delay-1">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="10" r="1"></circle>
+                <circle cx="8" cy="10" r="1"></circle>
+                <circle cx="16" cy="10" r="1"></circle>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">AI Business Assistant</h3>
+            <p class="feature-card-desc">Get AI-powered help with everyday business tasks. Ask questions in simple English or Indian contexts and receive accurate action items.</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">Daily Briefings</span>
+              <span class="feature-tag">Workflow Suggestions</span>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card reveal delay-2">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Smart Document Generation</h3>
+            <p class="feature-card-desc">Create professional business documents in seconds — proposals, service agreements, quotation letters, and HR templates with clean formatting.</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">PDF Export</span>
+              <span class="feature-tag">Custom Branding</span>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card reveal delay-3">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+                <path d="M16 15h2"></path>
+                <path d="M6 15h4"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Invoice Creation</h3>
+            <p class="feature-card-desc">Generate and manage invoices quickly with automated GST calculations, itemized billing, and instant shareable payment links.</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">GST Compliant</span>
+              <span class="feature-tag">UPI &amp; QR Codes</span>
+            </div>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card reveal delay-1">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Customer Support</h3>
+            <p class="feature-card-desc">Automate common customer questions and responses. Provide rapid answers over WhatsApp and email to maintain exceptional satisfaction.</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">WhatsApp Ready</span>
+              <span class="feature-tag">Auto Follow-ups</span>
+            </div>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card reveal delay-2">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Smart Scheduling</h3>
+            <p class="feature-card-desc">Organize appointments, tasks, and client activities effortlessly. Sync team calendars, set automated reminders, and prevent missed deadlines.</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">Meeting Links</span>
+              <span class="feature-tag">SMS Reminders</span>
+            </div>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card reveal delay-3">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="feature-card-title">Business Analytics</h3>
+            <p class="feature-card-desc">Turn business information into useful insights. Track cash collections, recurring customers, and top-selling services with clear visual charts.</p>
+            <div class="feature-tag-list">
+              <span class="feature-tag">Monthly Reports</span>
+              <span class="feature-tag">Revenue Trends</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Product Showcase Section
+         ========================================================================== -->
+    <section class="showcase-section" id="showcase">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Unified Interface</span>
+          <h2 class="section-title">One Workspace. Multiple Business Tasks.</h2>
+          <p class="section-desc">
+            Experience how seamlessly AquaMind handles administrative workload in real time.
+          </p>
+        </div>
+
+        <div class="showcase-container reveal">
+          <!-- Top Showcase Tab Bar -->
+          <div class="showcase-nav-bar">
+            <div class="dash-brand">
+              <span class="dash-brand-title" style="font-size: 1.0625rem;">AquaMind Workspace</span>
+            </div>
+            <div class="showcase-tab-group">
+              <button type="button" class="showcase-tab-btn active">AI Assistant</button>
+              <button type="button" class="showcase-tab-btn">Smart Invoices</button>
+              <button type="button" class="showcase-tab-btn">Business Analytics</button>
+            </div>
+          </div>
+
+          <!-- Content Grid -->
+          <div class="showcase-content-area">
+            <!-- Sidebar -->
+            <div class="showcase-sidebar">
+              <div class="showcase-menu-item active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                Dashboard
+              </div>
+              <div class="showcase-menu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                AI Assistant
+              </div>
+              <div class="showcase-menu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                Documents
+              </div>
+              <div class="showcase-menu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2" y="5" width="20" height="14" rx="2"></rect></svg>
+                Invoices
+              </div>
+              <div class="showcase-menu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                Customers
+              </div>
+              <div class="showcase-menu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="4" width="18" height="18" rx="2"></rect></svg>
+                Schedule
+              </div>
+              <div class="showcase-menu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                Analytics
+              </div>
+              <div class="showcase-menu-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="3"></circle></svg>
+                Settings
+              </div>
+            </div>
+
+            <!-- Workspace Main Content -->
+            <div class="showcase-workspace">
+              <!-- KPI Row -->
+              <div class="showcase-stats-row">
+                <div class="showcase-stat-card">
+                  <span class="showcase-stat-label">Monthly Revenue</span>
+                  <div class="showcase-stat-number" data-counter="125000" data-prefix="₹">₹1,25,000</div>
+                </div>
+                <div class="showcase-stat-card">
+                  <span class="showcase-stat-label">Customers</span>
+                  <div class="showcase-stat-number" data-counter="248">248</div>
+                </div>
+                <div class="showcase-stat-card">
+                  <span class="showcase-stat-label">Pending Invoices</span>
+                  <div class="showcase-stat-number" data-counter="12">12</div>
+                </div>
+                <div class="showcase-stat-card">
+                  <span class="showcase-stat-label">Tasks Automated</span>
+                  <div class="showcase-stat-number" data-counter="86" data-suffix="%">86%</div>
+                </div>
+              </div>
+
+              <!-- Interactive AI Chat Demonstration -->
+              <div class="showcase-chat-card">
+                <div id="showcaseChatMessages" style="display: flex; flex-direction: column; gap: 14px; max-height: 260px; overflow-y: auto;">
+                  <!-- Message 1: User -->
+                  <div class="chat-message-row user">
+                    <div class="chat-avatar user-avatar">DJ</div>
+                    <div class="chat-bubble user-bubble">
+                      Create a professional invoice for my customer.
+                    </div>
+                  </div>
+
+                  <!-- Message 2: AI -->
+                  <div class="chat-message-row">
+                    <div class="chat-avatar ai-avatar">AI</div>
+                    <div class="chat-bubble ai-bubble">
+                      Sure. I've prepared the invoice based on the customer details.
+                      
+                      <!-- Preview Card -->
+                      <div class="chat-invoice-preview">
+                        <div class="invoice-preview-head">
+                          <span>INVOICE #INV-1029</span>
+                          <span style="color: #10B981;">Draft Generated</span>
+                        </div>
+                        <div class="invoice-preview-row">
+                          <span>Client:</span>
+                          <span style="color: #0B1F3A; font-weight: 600;">Reddy &amp; Co. Bangalore</span>
+                        </div>
+                        <div class="invoice-preview-row">
+                          <span>Items:</span>
+                          <span>Digital Marketing &amp; Consulting (Sep 2025)</span>
+                        </div>
+                        <div class="invoice-preview-row">
+                          <span>Subtotal + 18% GST:</span>
+                          <span>₹25,000 + ₹4,500</span>
+                        </div>
+                        <div class="invoice-preview-total">
+                          <span>Total Payable:</span>
+                          <span>₹29,500</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Chat Input Row -->
+                <div class="chat-input-container">
+                  <input type="text" id="showcaseChatInput" class="chat-input-field" placeholder="Ask AquaMind anything (e.g. 'Draft follow-up email' or 'Schedule meeting tomorrow')..." value="">
+                  <button type="button" id="showcaseSendBtn" class="chat-send-btn">
+                    <span>Send</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         How It Works Section
+         ========================================================================== -->
+    <section class="how-it-works-section" id="how-it-works">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Simple Onboarding</span>
+          <h2 class="section-title">Get Started in Three Simple Steps</h2>
+          <p class="section-desc">
+            No complicated setup or lengthy software manuals. Be up and running in minutes.
+          </p>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Step 01 -->
+          <div class="step-card reveal delay-1">
+            <div class="step-badge">01</div>
+            <h3 class="step-title">Create Your Account</h3>
+            <p class="step-desc">Sign up and set up your business profile in under 2 minutes. Enter your business name, logo, and preferred currency.</p>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="step-card reveal delay-2">
+            <div class="step-badge">02</div>
+            <h3 class="step-title">Ask AquaMind</h3>
+            <p class="step-desc">Use the AI assistant to create documents, invoices, schedules, and more through natural conversational prompts.</p>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="step-card reveal delay-3">
+            <div class="step-badge">03</div>
+            <h3 class="step-title">Save Time &amp; Grow</h3>
+            <p class="step-desc">Automate repetitive work, cut administrative chaos in half, and focus your energy on expanding your customer base.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Who It Is For Section
+         ========================================================================== -->
+    <section class="who-it-is-for-section" id="who-it-is-for">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Tailored Solutions</span>
+          <h2 class="section-title">Built for Businesses That Want to Move Faster.</h2>
+          <p class="section-desc">
+            Whether you operate an agency, retail firm, consulting practice, or startup, AquaMind adapts to your workflow.
+          </p>
+        </div>
+
+        <div class="audiences-grid">
+          <!-- Card 1 -->
+          <div class="audience-card reveal delay-1">
+            <div class="audience-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            </div>
+            <h3 class="audience-title">Small Business Owners</h3>
+            <p class="audience-desc">Manage everyday operations more efficiently without adding overhead staff.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="audience-card reveal delay-2">
+            <div class="audience-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3 class="audience-title">Startups</h3>
+            <p class="audience-desc">Automate routine work while keeping costs strictly under control.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="audience-card reveal delay-3">
+            <div class="audience-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <h3 class="audience-title">Service Businesses</h3>
+            <p class="audience-desc">Manage customers, documents, invoices, and schedules seamlessly.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="audience-card reveal delay-4">
+            <div class="audience-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            </div>
+            <h3 class="audience-title">Professionals</h3>
+            <p class="audience-desc">Improve productivity and reduce repetitive administrative work every week.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="audience-card reveal delay-1">
+            <div class="audience-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </div>
+            <h3 class="audience-title">Law &amp; Professional Services</h3>
+            <p class="audience-desc">Streamline routine documentation and business workflows securely.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Pricing Section
+         ========================================================================== -->
+    <section class="pricing-section" id="pricing">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Transparent Value</span>
+          <h2 class="section-title">Simple Pricing. No Complicated Plans.</h2>
+          <p class="section-desc">
+            One comprehensive tier that unlocks the complete AI Business Assistant for your entire business.
+          </p>
+        </div>
+
+        <div class="pricing-wrapper reveal">
+          <div class="pricing-card">
+            <span class="pricing-featured-badge">All-In-One Plan</span>
+            
+            <div class="pricing-header">
+              <h3 class="plan-name">AquaMind Pro</h3>
+              <div class="plan-price-wrap">
+                <span class="plan-currency">₹</span>
+                <span class="plan-amount">1,500</span>
+                <span class="plan-period">/month</span>
+              </div>
+            </div>
+
+            <ul class="pricing-features-list">
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon">✓</span>
+                <span>AI Business Assistant</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon">✓</span>
+                <span>Document Generation</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon">✓</span>
+                <span>Invoice Creation</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon">✓</span>
+                <span>Customer Support Tools</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon">✓</span>
+                <span>Scheduling</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon">✓</span>
+                <span>Business Analytics</span>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="pricing-check-icon">✓</span>
+                <span>Secure Business Workspace</span>
+              </li>
+            </ul>
+
+            <button type="button" class="btn btn-primary btn-start-free" style="width: 100%; font-size: 1.0625rem; padding: 14px;">
+              Start Free
+            </button>
+
+            <p class="pricing-subtext">
+              Designed to be affordable for small and medium-sized businesses. 14-day free trial. Cancel anytime.
+            </p>
+          </div>
+
+          <!-- Interactive SME ROI & Savings Calculator -->
+          <div class="roi-calculator-box reveal delay-1">
+            <h3 class="roi-title">Calculate Your Monthly Savings with AquaMind</h3>
+            <div class="roi-controls-grid">
+              <div>
+                <div class="slider-group" style="margin-bottom: 20px;">
+                  <div class="slider-label-row">
+                    <span>Team Members:</span>
+                    <strong id="teamSizeVal" style="color: #00B8D9;">3 Members</strong>
+                  </div>
+                  <input type="range" id="teamSizeSlider" class="slider-input" min="1" max="15" value="3">
+                </div>
+
+                <div class="slider-group">
+                  <div class="slider-label-row">
+                    <span>Admin Hours Spent / Week:</span>
+                    <strong id="hoursSavedVal" style="color: #00B8D9;">10 hrs/week</strong>
+                  </div>
+                  <input type="range" id="hoursSavedSlider" class="slider-input" min="4" max="30" value="10">
+                </div>
+              </div>
+
+              <div class="roi-results-card">
+                <span class="roi-stat-label">Estimated Monthly Value Saved</span>
+                <div class="roi-stat-value" id="calculatedRupees">₹30,000</div>
+                <span class="roi-stat-hours" id="calculatedHours">+120 administrative hours saved / month</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Why AquaMind Section
+         ========================================================================== -->
+    <section class="why-section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">Our Distinction</span>
+          <h2 class="section-title">Why AquaMind?</h2>
+          <p class="section-desc">
+            We built AquaMind to solve the practical, day-to-day challenges of modern businesses.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Card 1 -->
+          <div class="why-card reveal delay-1">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <h3 class="why-card-title">Affordable AI</h3>
+            <p class="why-card-desc">Powerful AI without the complexity of expensive enterprise tools priced in foreign currencies.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="why-card reveal delay-2">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+            </div>
+            <h3 class="why-card-title">Simple Experience</h3>
+            <p class="why-card-desc">Designed for business owners without advanced technical knowledge. Talk to it like a trusted colleague.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="why-card reveal delay-3">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <h3 class="why-card-title">All-in-One</h3>
+            <p class="why-card-desc">Manage multiple everyday tasks — from GST billing to schedule reminders — from one unified platform.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="why-card reveal delay-4">
+            <div class="why-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="why-card-title">India Focused</h3>
+            <p class="why-card-desc">Designed around the needs of Indian SMEs, with native GST formatting, UPI integration, and localized phrasing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Security Section
+         ========================================================================== -->
+    <section class="security-section" id="security">
+      <div class="container">
+        <div class="security-box reveal">
+          <div class="security-header">
+            <span class="section-kicker" style="color: #00B8D9;">Data Integrity</span>
+            <h2 class="security-title">Your Business Data Matters.</h2>
+            <p class="security-desc">
+              AquaMind is designed with security and privacy in mind, helping businesses use AI while keeping their workflows organized and protected.
+            </p>
+          </div>
+
+          <div class="security-grid">
+            <div class="security-card">
+              <div class="security-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              </div>
+              <h3 class="security-card-title">Secure Workflows</h3>
+              <p class="security-card-desc">End-to-end encrypted session channels safeguard your invoices and customer communication.</p>
+            </div>
+
+            <div class="security-card">
+              <div class="security-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              </div>
+              <h3 class="security-card-title">Privacy Focused</h3>
+              <p class="security-card-desc">Your proprietary financial numbers and client records are never used to train public models.</p>
+            </div>
+
+            <div class="security-card">
+              <div class="security-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+              </div>
+              <h3 class="security-card-title">Controlled Access</h3>
+              <p class="security-card-desc">Manage team permissions with distinct role-based access to safeguard confidential ledgers.</p>
+            </div>
+
+            <div class="security-card">
+              <div class="security-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3 class="security-card-title">Reliable Infrastructure</h3>
+              <p class="security-card-desc">Built on high-availability cloud architecture with daily automated encrypted backups.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Final CTA Section
+         ========================================================================== -->
+    <section class="final-cta-section" id="cta">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2 class="cta-headline">Ready to Work Smarter?</h2>
+          <p class="cta-description">
+            Let AquaMind handle the repetitive work so you can focus on what matters most — growing your business.
+          </p>
+          <div class="cta-buttons-wrap">
+            <button type="button" class="btn btn-primary btn-start-free" style="padding: 14px 28px; font-size: 1rem;">
+              Start Free
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+            <button type="button" class="btn btn-secondary btn-book-demo" style="padding: 14px 28px; font-size: 1rem;">
+              Book a Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand Col -->
+        <div class="footer-brand-col">
+          <div class="brand-logo">
+            <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
+              <path d="M6 18C9.5 13.5 14.5 13.5 18 18C21.5 22.5 26.5 22.5 30 18" stroke="#00B8D9" stroke-width="3.5" stroke-linecap="round"/>
+              <path d="M6 24C9.5 19.5 14.5 19.5 18 24C21.5 28.5 26.5 28.5 30 24" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+            </svg>
+            <span class="footer-brand-title">AquaMind<span class="brand-dot">.</span></span>
+          </div>
+          <p class="footer-brand-desc">
+            Affordable AI automation for smarter businesses. Built with pride for Indian entrepreneurs.
+          </p>
+        </div>
+
+        <!-- Product Col -->
+        <div>
+          <h4 class="footer-col-title">Product</h4>
+          <ul class="footer-links-list">
+            <li><a href="#features" class="footer-link">Features</a></li>
+            <li><a href="#pricing" class="footer-link">Pricing</a></li>
+            <li><a href="#features" class="footer-link">AI Assistant</a></li>
+            <li><a href="#features" class="footer-link">Analytics</a></li>
+          </ul>
+        </div>
+
+        <!-- Company Col -->
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="#about" class="footer-link">About</a></li>
+            <li><a href="#about" class="footer-link">Contact</a></li>
+            <li><a href="#about" class="footer-link">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources Col -->
+        <div>
+          <h4 class="footer-col-title">Resources</h4>
+          <ul class="footer-links-list">
+            <li><a href="#how-it-works" class="footer-link">Help Center</a></li>
+            <li><a href="#how-it-works" class="footer-link">Documentation</a></li>
+            <li><a href="#how-it-works" class="footer-link">FAQs</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal Col -->
+        <div>
+          <h4 class="footer-col-title">Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="#security" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#security" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 AquaMind. All rights reserved.</span>
+        <div class="footer-region-badge">
+          <span>🇮🇳 Made for Indian SMEs &amp; Startups</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Modals: Start Free & Book a Demo
+       ========================================================================== -->
+  <!-- Start Free Modal -->
+  <div class="modal-overlay" id="startFreeModal" role="dialog" aria-modal="true" aria-labelledby="startFreeTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="startFreeTitle">Start Your 14-Day Free Trial</h3>
+        <button type="button" class="modal-close-btn" aria-label="Close dialog">×</button>
+      </div>
+      <form id="startFreeForm">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label" for="startName">Your Full Name</label>
+            <input type="text" id="startName" class="form-input" placeholder="e.g. Dasari Jeavan" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="startBusiness">Business / Company Name</label>
+            <input type="text" id="startBusiness" class="form-input" placeholder="e.g. Dasari Enterprises" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="startPhone">Mobile Number (WhatsApp Enabled)</label>
+            <input type="tel" id="startPhone" class="form-input" placeholder="+91 98765 43210" required>
+            <span class="form-helper">We'll send your instant workspace activation code via WhatsApp.</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="startCategory">Business Category</label>
+            <select id="startCategory" class="form-select">
+              <option value="retail">Retail / Trader / Shop</option>
+              <option value="agency">Agency / Consulting</option>
+              <option value="services">Professional Services / Legal</option>
+              <option value="startup">Tech Startup</option>
+              <option value="other">Other Business</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary modal-cancel-btn">Cancel</button>
+          <button type="submit" class="btn btn-primary">Create Free Account</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Book a Demo Modal -->
+  <div class="modal-overlay" id="bookDemoModal" role="dialog" aria-modal="true" aria-labelledby="bookDemoTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="bookDemoTitle">Schedule a 15-Minute Walkthrough</h3>
+        <button type="button" class="modal-close-btn" aria-label="Close dialog">×</button>
+      </div>
+      <form id="bookDemoForm">
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="form-label" for="demoName">Your Name</label>
+            <input type="text" id="demoName" class="form-input" placeholder="e.g. Dasari Jeavan" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="demoBusiness">Business Name</label>
+            <input type="text" id="demoBusiness" class="form-input" placeholder="e.g. Dasari Enterprises" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="demoEmail">Work Email</label>
+            <input type="email" id="demoEmail" class="form-input" placeholder="owner@business.in" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="demoSlot">Preferred Time Slot</label>
+            <select id="demoSlot" class="form-select">
+              <option value="morning">Morning (10:00 AM - 1:00 PM IST)</option>
+              <option value="afternoon">Afternoon (2:00 PM - 5:00 PM IST)</option>
+              <option value="evening">Evening (5:00 PM - 8:00 PM IST)</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary modal-cancel-btn">Cancel</button>
+          <button type="submit" class="btn btn-primary">Confirm Walkthrough</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script src="./script.js"></script>
+</body>
+</html>

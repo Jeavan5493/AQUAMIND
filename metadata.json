@@ -1,0 +1,6 @@
+{
+  "name": "AquaMind – AI Business Assistant for SMEs",
+  "description": "AquaMind helps small and medium-sized businesses automate routine work, create documents, manage invoices, support customers, and make smarter decisions with AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
